@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Scanline test</title>
+		<style>
+			html, body {
+				padding: 0;
+				margin: 0;
+				background: black;
+				color: #eee;
+			}
+
+			#app {
+			}
+
+			div.control-bar {
+				height: 3rem;
+				border-bottom: 1px solid #ccc;
+				display: flex;
+				flex-direction: row;
+				align-items: center;
+				gap: 1rem;
+				padding: 0 1rem;
+			}
+
+			.file-open {
+				background:#369;
+				padding: .5rem 1rem;
+				color: white;
+				overflow: hidden;
+				position: relative;
+				border-radius: .5rem;
+			}
+
+			.file-open input[type=file] {
+				position: absolute;
+				left: 0;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				opacity: 0.01;
+			}
+
+			.url-open button {
+				background:#369;
+				padding: .5rem 1rem;
+				color: white;
+				border-radius: .5rem;
+				border: none;
+			}
+
+			.url-open input {
+				padding: .5rem 1rem;
+				border: 1px solid #333;
+				background: #111;
+				color: #ccc;
+				border-radius: .5rem;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="app">
+		</div>
+		<script src="src/webgl-utils.js"></script>
+		<script src="src/scanline.js"></script>
+		<script src="src/main.js"></script>
+	</body>
+</html>
